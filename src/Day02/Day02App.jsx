@@ -1,3 +1,5 @@
+import Welcome from "../Showcase/Welcome";
+
 function Day02App() {
     const name = "React";
     const number = 10;
@@ -10,6 +12,8 @@ function Day02App() {
             <p>{number} + 5 = {number + 5}</p>
             <p>{isLogin ? "로그인 상태입니다" : "로그인해주세요"}</p>
             <button onClick = {() => alert(name.toUpperCase())}>확인</button>
+            <Welcome name={name} etc="그냥" />
+            <Welcome/>
         </div>
     );
 }
